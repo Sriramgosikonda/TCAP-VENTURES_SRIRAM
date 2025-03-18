@@ -1,4 +1,37 @@
+
+
 # TCAP-VENTURES_SRIRAM
+
+This project implements a **Bollinger Band Reversal** trading strategy with a backtesting system to analyze market performance. The project includes data ingestion, strategy execution, trade simulation, and result visualization.
+
+## Assignment Overview
+
+This project was developed as part of an assignment requiring the implementation of a **backtest logic for a trading strategy**. The key requirements included:
+
+- **Data Ingestion**:
+  - Fetch historical **4H/1D candle data** for at least **50 stocks/crypto** over 1 year.
+  - Store the data in a **folder/database**.
+
+- **Backtest Implementation**:
+  - Assume **unlimited capital**.
+  - Each trade involves purchasing **$100 worth of tokens**.
+  - At the end of the backtest period, sell all holdings.
+
+- **Trading Strategy - Bollinger Band Reversal**:
+  - **BUY** when the price falls **3% below** the lower Bollinger Band.
+  - **SELL** when the price reaches the **upper Bollinger Band**.
+
+- **Backtesting Requirements**:
+  - Implement **Object-Oriented Programming (OOP)** principles.
+  - Generate a **DataFrame** where each row represents a trade with the columns:
+    - `token`, `date_in`, `buy_price`, `date_out`, `sell_price`, `profit_percentage`
+  - Save the results in a CSV file.
+  - Develop a **web application** to visualize trading signals and performance.
+
+---
+
+## Project Structure
+
 
 This project implements a trading strategy utilizing Bollinger Bands to identify potential buy and sell signals in stock market data. The strategy is backtested to evaluate its performance over historical data.
 
@@ -25,5 +58,8 @@ This project implements a trading strategy utilizing Bollinger Bands to identify
 
 Install the required packages using:
 
-```bash
+
 pip install pandas numpy matplotlib flask
+
+
+ 
